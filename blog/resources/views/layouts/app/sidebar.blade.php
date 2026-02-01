@@ -16,6 +16,20 @@
                         {{ __('Dashboard') }}
                     </flux:sidebar.item>
                 </flux:sidebar.group>
+
+                <flux:sidebar.group :heading="__('Blog')" class="grid">
+                    <flux:sidebar.item icon="book-open" :href="route('posts.index')" :current="request()->routeIs('posts.index')" wire:navigate>
+                        {{ __('All Posts') }}
+                    </flux:sidebar.item>
+                    @auth
+                        <flux:sidebar.item icon="pencil" :href="route('posts.my-posts')" :current="request()->routeIs('posts.my-posts')" wire:navigate>
+                            {{ __('My Posts') }}
+                        </flux:sidebar.item>
+                        <flux:sidebar.item icon="plus" :href="route('posts.create')" :current="request()->routeIs('posts.create')" wire:navigate>
+                            {{ __('New Post') }}
+                        </flux:sidebar.item>
+                    @endauth
+                </flux:sidebar.group>
             </flux:sidebar.nav>
 
             <flux:spacer />
