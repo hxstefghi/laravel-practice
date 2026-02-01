@@ -25,4 +25,4 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::delete('/posts/{post:slug}', [PostController::class, 'destroy'])->name('posts.destroy');
 });
 
-require __DIR__.'/settings.php';
+require __DIR__ . '/settings.php';

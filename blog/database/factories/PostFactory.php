@@ -19,7 +19,7 @@ class PostFactory extends Factory
     public function definition(): array
     {
         $title = fake()->sentence();
-        
+
         return [
             'user_id' => User::factory(),
             'title' => $title,
@@ -35,7 +35,7 @@ class PostFactory extends Factory
      */
     public function published(): static
     {
-        return $this->state(fn (array $attributes) => [
+        return $this->state(fn(array $attributes) => [
             'published_at' => fake()->dateTimeBetween('-1 month', 'now'),
         ]);
     }
@@ -45,7 +45,7 @@ class PostFactory extends Factory
      */
     public function draft(): static
     {
-        return $this->state(fn (array $attributes) => [
+        return $this->state(fn(array $attributes) => [
             'published_at' => null,
         ]);
     }

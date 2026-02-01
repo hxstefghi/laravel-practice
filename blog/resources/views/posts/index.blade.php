@@ -12,8 +12,9 @@
             @endauth
         </div>
 
-        @if($posts->isEmpty())
-            <div class="rounded-xl border border-neutral-200 bg-white p-12 text-center dark:border-neutral-700 dark:bg-neutral-800">
+        @if ($posts->isEmpty())
+            <div
+                class="rounded-xl border border-neutral-200 bg-white p-12 text-center dark:border-neutral-700 dark:bg-neutral-800">
                 <flux:subheading>No posts yet</flux:subheading>
                 <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
                     Be the first to create a post!
@@ -21,16 +22,19 @@
             </div>
         @else
             <div class="space-y-6">
-                @foreach($posts as $post)
-                    <article class="rounded-xl border border-neutral-200 bg-white p-6 transition hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:hover:border-neutral-600">
+                @foreach ($posts as $post)
+                    <article
+                        class="rounded-xl border border-neutral-200 bg-white p-6 transition hover:border-neutral-300 dark:border-neutral-700 dark:bg-neutral-800 dark:hover:border-neutral-600">
                         <div class="mb-4 flex items-start justify-between">
                             <div class="flex-1">
                                 <a href="{{ route('posts.show', $post) }}" class="group">
-                                    <flux:heading size="lg" class="group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                                    <flux:heading size="lg"
+                                        class="group-hover:text-blue-600 dark:group-hover:text-blue-400">
                                         {{ $post->title }}
                                     </flux:heading>
                                 </a>
-                                <div class="mt-2 flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400">
+                                <div
+                                    class="mt-2 flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400">
                                     <span>{{ $post->user?->name ?? 'Unknown Author' }}</span>
                                     <span>•</span>
                                     <time datetime="{{ $post->published_at }}">
@@ -39,8 +43,8 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        @if($post->excerpt)
+
+                        @if ($post->excerpt)
                             <p class="mb-4 text-neutral-700 dark:text-neutral-300">
                                 {{ $post->excerpt }}
                             </p>

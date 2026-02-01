@@ -5,13 +5,13 @@
             <flux:subheading>Share your thoughts with the world</flux:subheading>
         </div>
 
-        @if($errors->any())
+        @if ($errors->any())
             <div class="mb-6 rounded-lg border border-red-200 bg-red-50 p-4 dark:border-red-900 dark:bg-red-950">
                 <div class="text-sm font-medium text-red-800 dark:text-red-200">
                     There were some errors with your submission:
                 </div>
                 <ul class="mt-2 list-disc list-inside text-sm text-red-700 dark:text-red-300">
-                    @foreach($errors->all() as $error)
+                    @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
                     @endforeach
                 </ul>
@@ -26,12 +26,8 @@
                     <!-- Title -->
                     <flux:field>
                         <flux:label>Title</flux:label>
-                        <flux:input 
-                            name="title" 
-                            placeholder="Enter post title" 
-                            value="{{ old('title') }}"
-                            required
-                        />
+                        <flux:input name="title" placeholder="Enter post title" value="{{ old('title') }}"
+                            required />
                         <flux:error name="title" />
                     </flux:field>
 
@@ -39,23 +35,16 @@
                     <flux:field>
                         <flux:label>Excerpt</flux:label>
                         <flux:description>A short summary that will appear in the post listing</flux:description>
-                        <flux:textarea 
-                            name="excerpt" 
-                            placeholder="Enter a brief summary (optional)"
-                            rows="2"
-                        >{{ old('excerpt') }}</flux:textarea>
+                        <flux:textarea name="excerpt" placeholder="Enter a brief summary (optional)" rows="2">
+                            {{ old('excerpt') }}</flux:textarea>
                         <flux:error name="excerpt" />
                     </flux:field>
 
                     <!-- Content -->
                     <flux:field>
                         <flux:label>Content</flux:label>
-                        <flux:textarea 
-                            name="content" 
-                            placeholder="Write your post content here..."
-                            rows="12"
-                            required
-                        >{{ old('content') }}</flux:textarea>
+                        <flux:textarea name="content" placeholder="Write your post content here..." rows="12"
+                            required>{{ old('content') }}</flux:textarea>
                         <flux:error name="content" />
                     </flux:field>
 
