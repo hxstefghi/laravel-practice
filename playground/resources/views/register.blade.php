@@ -1523,11 +1523,12 @@
             <div class="text-center">
                 <h1 class="font-bold text-3xl">Register</h1>
             </div>
-            <form action="" method="POST">
+            <form action="{{ route('register.save') }}" method="POST">
+                @csrf
                 <div class="flex flex-col">
-                    <label for="">Name</label>
-                    <input type="text name="name" placeholder="Name"
-                        class="px-3 py-2 outline-1 outline-gray-800 rounded-md mb-4">
+                    <x-input-field name="name" type="text" placeholder="Name" label="Name" />
+
+                    <x-input-field label="Email" type="email" name="email" placeholder="Email" />
 
                     <button type="submit"
                         class="px-3 py-2 rounded-md bg-violet-800 hover:bg-violet-700 cursor-pointer text-white font-bold">Register</button>
