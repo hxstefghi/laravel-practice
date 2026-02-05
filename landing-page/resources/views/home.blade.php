@@ -3,7 +3,7 @@
 
 <x-head />
 
-<body class="bg-gray-200">
+<body class="bg-gray-100">
 
     <x-navbar />
 
@@ -72,6 +72,58 @@
                     </div>
                 </div>
             </div>
+
+            <div class="text-center mb-6">
+                <p class="text-2xl">Powering billing for thousands of startups</p>
+            </div>
+            <div class="flex justify-center gap-12">
+                <h1 class="font-bold text-2xl">Company</h1>
+                <h1 class="font-bold text-2xl">Company</h1>
+                <h1 class="font-bold text-2xl">Company</h1>
+                <h1 class="font-bold text-2xl">Company</h1>
+            </div>
+
+            <div class="py-12 p-3">
+                <div class="flex gap-6">
+                    <div class="flex flex-col bg-white p-6 rounded-xl flex-1">
+                        <div class="flex flex-col justify-between">
+                            <div class="mb-12">
+                                <h1 class="font-bold text-2xl mb-2">Logo</h1>
+                                <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere labore
+                                    voluptas sit nisi
+                                    animi itaque aliquid, inventore incidunt quis illo. Harum perspiciatis quo error ea?
+                                </p>
+                                <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et!</p>
+                            </div>
+
+                            <p class="font-bold">Founder Name</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col bg-white p-6 rounded-xl flex-1">
+                        <div class="flex flex-col justify-between">
+                            <div class="mb-12">
+                                <h1 class="font-bold text-2xl mb-2">Logo</h1>
+                                <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere labore
+                                    voluptas sit nisi
+                                    animi itaque aliquid, inventore incidunt quis illo. Harum perspiciatis quo error ea?
+                                </p>
+                                <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et!</p>
+                            </div>
+
+                            <p class="font-bold">Founder Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mb-6">
+                <p class="font-light mb-3">Framework Adapters</p>
+                <p class="text-4xl font-bold">Integrate in under a minute</p>
+            </div>
+
+
         </div>
     </section>
 </body>
