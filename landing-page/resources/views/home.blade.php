@@ -120,10 +120,142 @@
 
             <div class="text-center mb-6">
                 <p class="font-light mb-3">Framework Adapters</p>
-                <p class="text-4xl font-bold">Integrate in under a minute</p>
+                <p class="text-5xl font-bold">Integrate in under a minute</p>
             </div>
 
+            <div class="flex">
+                <div class="flex flex-col bg-white p-12 rounded-s-2xl space-y-6">
+                    <h1 class="font-bold text-3xl">Next.js Adapter</h1>
+                    <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat atque architecto
+                        placeat
+                        distinctio? Porro, magnam.</p>
+                    <ul>
+                        <li>Secure & Simple Checkouts</li>
+                        <li>Integrated Customer Portal</li>
+                        <li>Granular & Reliable Webhook Handler</li>
+                    </ul>
 
+                    <button class="p-3 rounded-full bg-gray-800 text-white cursor-pointer w-30">Learn
+                        More</button>
+                </div>
+
+                <div class="flex flex-col bg-gray-900 text-white p-12 rounded-e-2xl space-y-6">
+                    <h1 class="font-bold text-3xl">Next.js Adapter</h1>
+                    <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat atque architecto
+                        placeat
+                        distinctio? Porro, magnam.</p>
+                    <ul>
+                        <li>Secure & Simple Checkouts</li>
+                        <li>Integrated Customer Portal</li>
+                        <li>Granular & Reliable Webhook Handler</li>
+                    </ul>
+
+                    <button class="p-3 rounded-full bg-white text-black cursor-pointer w-30">Learn
+                        More</button>
+                </div>
+            </div>
+
+            <div class="py-12">
+                <div class="text-center mb-12">
+                    <p class="font-light">Testimonials</p>
+                    <h1 class="text-5xl font-bold">Why people love polar</h1>
+                </div>
+
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="flex flex-col bg-white p-6 rounded-xl flex-1">
+                        <div class="flex flex-col justify-between">
+                            <div class="mb-12">
+                                <h1 class="font-bold text-2xl mb-2">Logo</h1>
+                                <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere labore
+                                    voluptas sit nisi
+                                    animi itaque aliquid, inventore incidunt quis illo. Harum perspiciatis quo error ea?
+                                </p>
+                                <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et!</p>
+                            </div>
+
+                            <p class="font-bold">Founder Name</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col bg-white p-6 rounded-xl flex-1">
+                        <div class="flex flex-col justify-between">
+                            <div class="mb-12">
+                                <h1 class="font-bold text-2xl mb-2">Logo</h1>
+                                <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere labore
+                                    voluptas sit nisi
+                                    animi itaque aliquid, inventore incidunt quis illo. Harum perspiciatis quo error ea?
+                                </p>
+                                <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et!</p>
+                            </div>
+
+                            <p class="font-bold">Founder Name</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col bg-white p-6 rounded-xl flex-1">
+                        <div class="flex flex-col justify-between">
+                            <div class="mb-12">
+                                <h1 class="font-bold text-2xl mb-2">Logo</h1>
+                                <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere labore
+                                    voluptas sit nisi
+                                    animi itaque aliquid, inventore incidunt quis illo. Harum perspiciatis quo error ea?
+                                </p>
+                                <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et!</p>
+                            </div>
+
+                            <p class="font-bold">Founder Name</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col bg-white p-6 rounded-xl flex-1">
+                        <div class="flex flex-col justify-between">
+                            <div class="mb-12">
+                                <h1 class="font-bold text-2xl mb-2">Logo</h1>
+                                <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere labore
+                                    voluptas sit nisi
+                                    animi itaque aliquid, inventore incidunt quis illo. Harum perspiciatis quo error ea?
+                                </p>
+                                <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et!</p>
+                            </div>
+
+                            <p class="font-bold">Founder Name</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col bg-white p-6 rounded-xl flex-1">
+                        <div class="flex flex-col justify-between">
+                            <div class="mb-12">
+                                <h1 class="font-bold text-2xl mb-2">Logo</h1>
+                                <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                                    labore
+                                    voluptas sit nisi
+                                    animi itaque aliquid, inventore incidunt quis illo. Harum perspiciatis quo error ea?
+                                </p>
+                                <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et!</p>
+                            </div>
+
+                            <p class="font-bold">Founder Name</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col bg-white p-6 rounded-xl flex-1">
+                        <div class="flex flex-col justify-between">
+                            <div class="mb-12">
+                                <h1 class="font-bold text-2xl mb-2">Logo</h1>
+                                <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                                    labore
+                                    voluptas sit nisi
+                                    animi itaque aliquid, inventore incidunt quis illo. Harum perspiciatis quo error ea?
+                                </p>
+                                <p class="mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <p class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et!</p>
+                            </div>
+
+                            <p class="font-bold">Founder Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>
