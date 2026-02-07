@@ -1,7 +1,9 @@
 <header class="py-12">
     <div class="mx-auto max-w-6xl">
         <nav class="flex items-center justify-between">
-            <h1 class="font-bold text-3xl">Logo</h1>
+            <a href={{ route('home') }}>
+                <h1 class="font-bold text-3xl">Logo</h1>
+            </a>
 
             <div class="space-x-8">
                 <a href="#">Features</a>
@@ -10,7 +12,7 @@
             </div>
 
             <div>
-                <a href="#">Log In</a>
+                <a href={{ route('login-view') }}>Log In</a>
             </div>
         </nav>
     </div>
