@@ -23,6 +23,12 @@
                     <button class="bg-gray-200 py-4 px-4 rounded-full">
                         Why Polar
                     </button>
+                    @auth
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit" class="bg-red-500 text-white py-4 px-4 rounded-full ml-4">Logout</button>
+                        </form>
+                    @endauth
                 </div>
             </div>
 
@@ -211,7 +217,8 @@
                         <div class="flex flex-col justify-between">
                             <div class="mb-12">
                                 <h1 class="font-bold text-2xl mb-2">Logo</h1>
-                                <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere labore
+                                <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                                    labore
                                     voluptas sit nisi
                                     animi itaque aliquid, inventore incidunt quis illo. Harum perspiciatis quo error ea?
                                 </p>
