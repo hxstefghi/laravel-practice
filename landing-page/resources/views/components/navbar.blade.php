@@ -12,7 +12,14 @@
             </div>
 
             <div>
-                <a href={{ route('login-view') }}>Log In</a>
+                @auth
+                    <form method="POST" action="{{ route('logout') }}" class="inline">
+                        @csrf
+                        <button type="submit" class="cursor-pointer">Logout</button>
+                    </form>
+                @else
+                    <a href="{{ route('login-view') }}">Log In</a>
+                @endauth
             </div>
         </nav>
     </div>

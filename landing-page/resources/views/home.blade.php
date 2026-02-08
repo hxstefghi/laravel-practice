@@ -23,12 +23,7 @@
                     <button class="bg-gray-200 py-4 px-4 rounded-full">
                         Why Polar
                     </button>
-                    @auth
-                        <form method="POST" action="{{ route('logout') }}">
-                            @csrf
-                            <button type="submit" class="bg-red-500 text-white py-4 px-4 rounded-full ml-4">Logout</button>
-                        </form>
-                    @endauth
+
                 </div>
             </div>
 
