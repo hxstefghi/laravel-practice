@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,6 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 // Route::view('/register', 'register')->name('register-view');
 Route::resource('/register', UserController::class);
 Route::get('/register', [UserController::class, 'create'])->name('register');
+
+Route::resource('/create-post', PostController::class);
+Route::get('/create-post', [PostController::class, 'create'])->name('create-post');

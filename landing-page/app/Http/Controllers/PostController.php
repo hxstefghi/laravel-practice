@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreUserRequest;
-use App\Models\User;
+use App\Http\Requests\StorePostRequest;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,17 +21,17 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('register');
+        return view('create-post');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreUserRequest $request)
+    public function store(StorePostRequest $request)
     {
         $validated = $request->validated();
 
-        User::create($validated);
+        Post::create($validated);
 
         return redirect()->route('home');
     }

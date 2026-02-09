@@ -23,15 +23,6 @@
                         <button
                             class="py-2 px-3 rounded-lg bg-gray-900 hover:bg-gray-800 text-white mt-2 cursor-pointer">Login</button>
                     </div>
-                    @if ($errors->any())
-                        <div class="mt-4 text-red-600">
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
                 </form>
             </div>
 
