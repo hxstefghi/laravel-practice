@@ -8,6 +8,7 @@
     <x-navbar />
     @auth
         @foreach ($posts as $post)
+            <h1>{{ $post->user->name }}</h1>
             <h1>{{ $post->title }}</h1>
             <p>{{ $post->body }}</p>
         @endforeach
