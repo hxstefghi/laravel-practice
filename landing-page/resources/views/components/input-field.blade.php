@@ -1,5 +1,5 @@
 <label for="{{ $name }}">{{ $label }}</label>
-<input type="{{ $type }}" name="{{ $name }}" placeholder="{{ $label }}"
+<input type="{{ $type }}" name="{{ $name }}" placeholder="{{ $label }}" value="{{ $value }}"
     class="py-2 px-3 outline-1 outline-gray-800 rounded-md">
 
 @error($name)
