@@ -7,12 +7,12 @@
 
     <x-navbar />
     @auth
-        @foreach ($posts as $post)
-            <section class="py-2">
-                <div class="mx-auto max-w-xl">
-                    <a href="{{ route('post.show', $post->id) }}">
-                        <div class="flex flex-col">
-                            <div class="bg-white p-6 rounded-2xl">
+        <section class="py-2">
+            <div class="mx-auto max-w-xl">
+                <div class="flex flex-col">
+                    <div class="bg-white p-6 rounded-2xl">
+                        <a href="{{ route('post.index') }}" class="text-sm text-gray-500">
+                            < Back </a>
                                 <div class="flex justify-between">
                                     <h1>{{ $post->user->name }}</h1>
                                     <h1>{{ $post->user->email }}</h1>
@@ -25,14 +25,16 @@
                                     </div>
                                     <p class="text-gray-500 text-sm">Posted {{ $post->updated_at->diffForHumans() }}</p>
                                 </div>
-                            </div>
-                        </div>
-                    </a>
+                                <div class="flex justify-end gap-2 mt-4">
+                                    <a href="{{ route('post.edit', $post->id) }}"
+                                        class="py-2 px-3 rounded-lg bg-gray-800 text-white cursor-pointer">Edit</a>
+                                    <a href=""
+                                        class="py-2 px-3 rounded-lg bg-red-500 text-white cursor-pointer">Delete</a>
+                                </div>
+                    </div>
                 </div>
-            </section>
-        @endforeach
-    @else
-        <x-guest-home />
+            </div>
+        </section>
     @endauth
 </body>
 

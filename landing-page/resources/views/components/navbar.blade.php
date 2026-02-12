@@ -10,7 +10,7 @@
                 <a href="#">Docs</a>
                 <a href="#">Company</a>
                 @auth
-                    <a href="{{ route('create-post') }}">Create Post</a>
+                    <a href="{{ route('post.create') }}">Create Post</a>
                 @endauth
             </div>
 

@@ -9,7 +9,7 @@
         <div class="max-w-2xl mx-auto">
             <h1 class="text-2xl font-bold mb-6">Create Post</h1>
 
-            <form action="{{ route('create-post.store') }}" method="POST">
+            <form action="{{ route('post.store') }}" method="POST">
                 @csrf
 
                 <div class="flex flex-col space-y-2">
