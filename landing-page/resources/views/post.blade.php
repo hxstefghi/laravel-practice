@@ -28,8 +28,13 @@
                                 <div class="flex justify-end gap-2 mt-4">
                                     <a href="{{ route('post.edit', $post->id) }}"
                                         class="py-2 px-3 rounded-lg bg-gray-800 text-white cursor-pointer">Edit</a>
-                                    <a href=""
-                                        class="py-2 px-3 rounded-lg bg-red-500 text-white cursor-pointer">Delete</a>
+                                    <form action="{{ route('post.destroy', $post->id) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+
+                                        <button type="submit"
+                                            class="py-2 px-3 rounded-lg bg-red-500 text-white cursor-pointer">Delete</button>
+                                    </form>
                                 </div>
                     </div>
                 </div>
