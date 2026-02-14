@@ -33,7 +33,7 @@ class UserController extends Controller
 
         User::create($validated);
 
-        return redirect()->route('home');
+        return redirect()->route('login-view');
     }
 
     /**
