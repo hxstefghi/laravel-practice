@@ -12,7 +12,7 @@
             </div>
 
             <div class="mx-auto max-w-md">
-                <form action="{{ route('register.store') }}" method="POST">
+                <form action="{{ route('user.store') }}" method="POST">
                     @csrf
 
                     <div class="flex flex-col space-y-2">

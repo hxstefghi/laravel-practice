@@ -11,6 +11,7 @@
                 <a href="#">Company</a>
                 @auth
                     <a href="{{ route('post.create') }}">Create Post</a>
+                    <a href="{{ route('user.show', auth()->user()->id) }}">Profile</a>
                 @endauth
             </div>
 
